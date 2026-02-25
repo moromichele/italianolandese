@@ -90,7 +90,7 @@ export default function Home() {
 										aria-label={t.contact.linkedinAria}
 										target="_blank"
 										rel="noopener noreferrer"
-										href="https://www.linkedin.com/in/michele-moro-07a81a21b/"
+										href="https://www.linkedin.com/in/frauke-g-joris-019a959/"
 										className={css.linkWithIcon}
 									>
 										<RiLinkedinBoxLine size={50} />
