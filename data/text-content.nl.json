@@ -1,0 +1,28 @@
+{
+	"header": {
+		"buttonAria": "Language switch button"
+	},
+	"about": {
+		"title1": "Vertalingen",
+		"title2": "Italiaans - Nederlands",
+		"work": {
+			"title": "Opdrachten",
+			"p1": "Kunstkritiek, reis- en kookboeken, literatuur, gedichten, theater, teksten op barokmuziek, filosofie, architectuur voor Belgische en Nederlandse uitgeverijen, theaters en andere opdrachtgevers uit de culturele sector, vooral uit het Italiaans, maar ook uit het Frans. Mijn dagelijks werk bestaat echter vooral uit technische en marketingteksten voor Italiaanse klanten, uit het Italiaans en het Engels.",
+			"p2": "Meest recente publicatie:",
+			"p3": "Bellezza e Bruttezza, het ideale, het reële en het karikaturale in de Renaissance, kunstboek bij de gelijknamige tentoonstelling in het Paleis voor Schone Kunsten Bozar, voor het Mercatorfonds, 2026."
+		},
+		"bio":{
+			"title": "Wie ben ik",
+			"p1": "Officieel heet ik Greta Joris - Greet voor de familie - maar de meeste mensen noemen mij Frauke. In 1984 ben ik na een opleiding voor vertaler Frans - Italiaans naar Italië verhuisd, waar ik de eerste zes jaar in Rome heb gewoond en daarna naar Toscane ben gegaan, waar ik nog steeds werk en woon. Naast enkele vaste banen (Mondial Assistance, La Repubblica en Winterthur) heb ik altijd vertaald als freelancer."
+		}
+	},
+	"contact": {
+		"heading": "Contact",
+		"placeholder": "Translation inquiry",
+		"emailAria": "External link for email contact",
+		"linkedinAria": "External link to Linkedin profile"
+	},
+	"footer": {
+		"linkedinAria": "External link to website developer's Linkedin profile"
+	}
+}

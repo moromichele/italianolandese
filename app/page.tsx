@@ -1,66 +1,122 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+
+import css from "./page.module.css"
+import { LANGS, useLang } from "./context/translation-context"
+import { MdOutlineMail } from "react-icons/md"
+import { RiLinkedinBoxLine } from "react-icons/ri"
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+	const { t, toggleLang, lang } = useLang()
+
+	return (
+		<div className={css.page}>
+			<div className={css.mainLayout}>
+				<div className={css.header}>
+					<div className={css.headerContent}>
+						<div className={css.websiteTitleContainer}>
+							<h1 className={css.websiteName}>
+								<span className={lang === LANGS.IT ? css.orangeText : ""}>
+									Italian
+								</span>
+								<span className={css.orangeText}>o</span>
+								<span className={lang === LANGS.NL ? css.orangeText : ""}>
+									landese
+								</span>
+							</h1>
+						</div>
+						<div className={css.divider} />
+						<button
+							className={css.langSwitchButton}
+							onClick={toggleLang}
+							aria-label={t.header.buttonAria}
+						>
+							<div className={lang === LANGS.IT ? css.activeLang : undefined}>
+								<div>IT</div>
+								<div
+									className={lang === LANGS.IT ? css.activeLangDot : undefined}
+								/>
+							</div>
+							<div className={lang === LANGS.NL ? css.activeLang : undefined}>
+								<div>NL</div>
+								<div
+									className={lang === LANGS.NL ? css.activeLangDot : undefined}
+								/>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div className={css.bodyLayout}>
+					<div className={css.aboutContainer}>
+						<div className={css.aboutSection}>
+							<h1 className={css.title}>
+								<span className={css.line}>{t.about.title1 + " "}</span>
+								<span className={css.line}>{t.about.title2}</span>
+							</h1>
+							<div className={css.paragraph}>
+								<h3 className={css.paragraphTitle}>{t.about.work.title}</h3>
+								<p>{t.about.work.p1}</p>
+								<p>
+									<i>{t.about.work.p2}</i>
+								</p>
+								<p>{t.about.work.p3}</p>
+							</div>
+							<div className={css.paragraph}>
+								<h3 className={css.paragraphTitle}>{t.about.bio.title}</h3>
+								<p>{t.about.bio.p1}</p>
+							</div>
+						</div>
+					</div>
+					<div className={css.contactContainer}>
+						<div className={css.contactSection}>
+							<h2>{t.contact.heading}</h2>
+							<ul className={css.contactList}>
+								<li className={css.contactItem}>
+									<a
+										aria-label={t.contact.emailAria}
+										target="_blank"
+										rel="noopener noreferrer"
+										href={`mailto:italianolandese+web@gmail.com?subject=${t.contact.placeholder}`}
+										className={css.linkWithIcon}
+									>
+										<MdOutlineMail size={50} />
+										<p className={css.bait}>
+											italianolandese<span>@</span>gmail.<span>gibberish.</span>
+											com
+										</p>
+									</a>
+								</li>
+								<li className={css.contactItem}>
+									<a
+										aria-label={t.contact.linkedinAria}
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://www.linkedin.com/in/michele-moro-07a81a21b/"
+										className={css.linkWithIcon}
+									>
+										<RiLinkedinBoxLine size={50} />
+										<p>Linkedin</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<footer className={css.footer}>
+					<div className={css.footerContent}>
+						<p>website</p>
+						<a
+							aria-label={t.footer.linkedinAria}
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.linkedin.com/in/michele-moro-07a81a21b/"
+							className={css.linkWithIcon}
+						>
+							<p>@michele_moro</p>
+							<RiLinkedinBoxLine size={15} />
+						</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+	)
 }

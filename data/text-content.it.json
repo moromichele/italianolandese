@@ -1,0 +1,28 @@
+{
+	"header": {
+		"buttonAria": "Language switch button"
+	},
+	"about": {
+		"title1": "Traduzioni",
+		"title2": "italiano - olandese",
+		"work": {
+			"title": "Incarichi",
+			"p1": "Manuali e stringhe per utenti e tecnici di sistemi di riscaldamento, dispositivi di sicurezza anticaduta, macchinari agricoli, linee per il packaging, linee per il cartone ondulato, centri di lavoro CNC per la lavorazione di legno e marmo, sistemi di trasporto in genere e robot(ica). Traduco gli stessi argomenti anche dall'inglese. I miei clienti mi apprezzano in modo particolare per la traduzione di testi che devono essere accattivanti - siti, comunicati stampa e presentazioni marketing - in quanto si tratta di aziende italiane che disegnano e producono il tipico Made in Italy: cucine, bagni, mobili e cappe, ma anche prodotti alimentari tipici.",
+			"p2": "Chiarimenti:",
+			"p3": "La mia madrelingua viene comunemente chiamata “olandese”, ma anche “fiammingo” (in Belgio) e neerlandese (da cui la sigla NL). Questi tre nomi indicano in realtà una sola lingua, standardizzata per quanto riguarda la forma scritta. I miei testi rispettano sempre la terminologia e fraseologia delle varie Direttive europee."
+		},
+		"bio":{
+			"title": "Mi presento",
+			"p1": "Ufficialmente mi chiamo Greta Joris, ma tutti mi chiamano “Frauke”. Dopo aver conseguito la laurea come traduttrice (italiano e francese), nel 1984 mi sono trasferita in Italia. Oltre ad aver lavorato in alcune aziende come impiegata (La Repubblica, Winterhur, Mondial Assistance a Roma), ho sempre tradotto da freelance per case editrici, aziende e agenzie di traduzione, a Roma e in Toscana (Amiata) dove vivo."
+		}
+	},
+	"contact": {
+		"heading": "Contatti",
+		"placeholder": "Informazioni per traduzione",
+		"emailAria": "Link esterno per contatto via email",
+		"linkedinAria": "Link esterno al profilo linkedin"
+	},
+	"footer": {
+		"linkedinAria": "Link esterno al profilo linkedin dello sviluppatore del sito"
+	}
+}
